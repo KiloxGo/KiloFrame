@@ -22,6 +22,7 @@ const FeedPosts = () => {
     <Container maxW={"container.sm"} py={10} px={2}>
       {isLoading &&
         [0, 1, 2, 3].map((_, idx) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
           <VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
             <Flex gap={2}>
               <SkeletonCircle size="10" />
