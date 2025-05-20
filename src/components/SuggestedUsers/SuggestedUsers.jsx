@@ -26,8 +26,16 @@ const SuggestedUsers = () => {
         followers={7210}
         avatar="https://bit.ly/dan-abramov"
       />
-      <SuggestedUser />
-      <SuggestedUser />
+      <SuggestedUser
+        name="ToolmanQ"
+        followers={7210}
+        avatar="https://bit.ly/dan-abramov"
+      />
+      <SuggestedUser
+        name="Sunday"
+        followers={7210}
+        avatar="https://bit.ly/dan-abramov"
+      />
       <Box fontSize={12} color={"gray.500"} mt={5} alignSelf={"start"}>
         © 2023 KiloxGo. All rights reserved.
         <Link

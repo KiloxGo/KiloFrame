@@ -37,14 +37,14 @@ const FeedPosts = () => {
         ))}
       {!isLoading && (
         <>
-          <FeedPost img="/img1.png" username="BB" avatar="/img1.png" />
-          <FeedPost img="/img2.png" username="Reqwey" avatar="/img2.png" />
-          <FeedPost img="/img3.png" username="Kilost" avatar="/img3.png" />
           <FeedPost
             img="/img4.png"
             username="KodateMitsuru"
             avatar="/img4.png"
           />
+          <FeedPost img="/img1.png" username="BB" avatar="/img1.png" />
+          <FeedPost img="/img2.png" username="Reqwey" avatar="/img2.png" />
+          <FeedPost img="/img3.png" username="Kilost" avatar="/img3.png" />
         </>
       )}
     </Container>
