@@ -14,7 +14,7 @@ import {
   UnlikeLogo,
 } from "../../assets/constants";
 
-const PostFooter = () => {
+const PostFooter = ({ username }) => {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(0);
   const handleLike = () => {
@@ -38,8 +38,9 @@ const PostFooter = () => {
           <CommentLogo />
         </Box>
       </Flex>
+      <Flex>{likes} likes</Flex>
       <Text fontSize="sm" fontWeight={700}>
-        asaprogrammer
+        {username}
       </Text>
       <Text as="span" fontWeight={400}>
         Feeling good
