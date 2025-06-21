@@ -20,7 +20,7 @@ const Signup = () => {
 
   const [showPassword, setShowPassword] = useState(false);
 
-  const { signup, loading, error } = useSignUpWithEmailAndPassword();
+  const { loading, error, signup } = useSignUpWithEmailAndPassword();
 
   return (
     <>
