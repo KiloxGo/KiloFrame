@@ -10,8 +10,10 @@ import {
 import { AiFillHome } from "react-icons/ai";
 import { BiLogOut } from "react-icons/bi";
 import useLogout from "../../hooks/useLogout";
+import useAuthStore from "../../store/authStore";
 
 const Sidebar = () => {
+  const authUser = useAuthStore((state) => state.user);
   const sidebarItems = [
     {
       icon: <AiFillHome size={25} />,
@@ -31,9 +33,15 @@ const Sidebar = () => {
       text: "Create",
     },
     {
-      icon: <Avatar size={"sm"} name="Kilox" src="/profilepic.png" />,
+      icon: (
+        <Avatar
+          size={"sm"}
+          name={authUser?.username || ""}
+          src={authUser?.profilePicURL || ""}
+        />
+      ),
       text: "Profile",
-      link: "/kiloxgo",
+      link: `/${authUser?.username}`,
     },
   ];
 
